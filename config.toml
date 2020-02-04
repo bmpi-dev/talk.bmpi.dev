@@ -2,10 +2,34 @@ baseURL = "https://talk.bmpi.dev"
 languageCode = "zh-cn"
 title = "BMPI Talks"
 
+disableKinds = ["sitemap", "RSS"]
+
 theme = "reveal-hugo"
+
+[author]
+name = "Dawei Ma"
+
+# as of hugo 0.60 goldmark is the default
+# reveal-hugo doesn't support goldmark yet
+# so force to black friday
+[markup]
+# defaultMarkdownHandler = "blackfriday"
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+# we need a style that looks good in both light and dark background!
+style = "tango"
 
 [outputFormats.Reveal]
 baseName = "index"
 mediaType = "text/html"
 isHTML = true
+
+[params.reveal_hugo]
+history = true
+
+# used in content/template-example
+[params.reveal_hugo.templates.grey]
+background = "#424242"
+transition = "convex"
 
