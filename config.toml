@@ -1,0 +1,11 @@
+baseURL = "https://talk.bmpi.dev"
+languageCode = "zh-cn"
+title = "BMPI Talks"
+
+theme = "reveal-hugo"
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
+
