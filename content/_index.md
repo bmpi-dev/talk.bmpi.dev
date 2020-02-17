@@ -10,7 +10,7 @@ outputs = ["Reveal"]
 ## 2019
 
 - [Elixir介绍](./elixir/)
-- [在线计算广告](./compute-ads-intro/)
+- [在线计算广告](https://www.bmpi.dev/money/what-is-internet-advertising/)
 
 ---
 
