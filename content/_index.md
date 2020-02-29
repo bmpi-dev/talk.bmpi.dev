@@ -3,7 +3,7 @@ title = "Dawei Ma's Talks"
 outputs = ["Reveal"]
 +++
 
-@ [@Dawei Ma's](https://bmpi.dev/about/) Talks @
+~ [@Dawei Ma's](https://bmpi.dev/about/) Talks ~
 
 ---
 
