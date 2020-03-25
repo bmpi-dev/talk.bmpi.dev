@@ -7,6 +7,12 @@ outputs = ["Reveal"]
 
 ---
 
+## 2020
+
+- [流量研究](./web_traffic_research/)
+
+---
+
 ## 2019
 
 - [Elixir介绍](./elixir/)
