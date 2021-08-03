@@ -7,6 +7,12 @@ outputs = ["Reveal"]
 
 ---
 
+## 2021
+
+- [i18n in Java](./i18n_java/)
+
+---
+
 ## 2020
 
 - [流量研究](./web_traffic_research/)
