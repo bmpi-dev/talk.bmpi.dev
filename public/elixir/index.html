@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<title>Elixir Intro</title>
+
+<meta name="author" content="Dawei Ma">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+<link rel="stylesheet" href="/reveal-js/css/reveal.css"><link rel="stylesheet" href="/reveal-hugo/themes/robot-lung.css" id="theme"><link rel="stylesheet" href="/highlight-js/color-brewer.min.css">
+    
+<style>
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  box-shadow:none;
+}
+</style>
+
+<style>
+.img-column {
+  float: left;
+  width: 40%;
+  padding: 5px;
+}
+
+ 
+.img-side-by-side::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+  
+
+    <section><p><img src="https://img.bmpi.dev/3c4893ed-d5ef-e8f3-d24b-4b7318b582ba.png" alt=""></p>
+<p>
+
+<span class='fragment '
+  >
+  从
+</span>
+
+
+<span class='fragment '
+  >
+  入
+</span>
+
+
+<span class='fragment '
+  >
+  门
+</span>
+
+
+<span class='fragment '
+  >
+  到
+</span>
+
+
+<span class='fragment '
+  >
+  失
+</span>
+
+
+<span class='fragment '
+  >
+  业
+</span></p>
+</section><section>
+<h5 id="my-programming-language-learning-path">My programming language learning path</h5>
+<ul>
+<li>C/C++</li>
+<li>Java/Scala (SpringBoot/Play2/Vert.x/RxJava)</li>
+<li>Swift/Objective-C (RxSwift)</li>
+<li>Python (Django/Flask/Tornado)</li>
+<li>Elixir/Erlang (Phoenix)</li>
+<li>Golang</li>
+<li>Javascript (Vue/Angular)</li>
+<li>PHP (Laravel)</li>
+<li>CommonLisp (Learning)</li>
+<li>Rust (Will Learn)</li>
+</ul>
+</section><section>
+<h5 id="rules-for-learning-a-language">Rules for learning a language</h5>
+<ul>
+<li>Must solve a problem</li>
+<li>Problem not addressed by current stack</li>
+<li>“Fast” is not a purpose</li>
+<li>Should be the best solution</li>
+</ul>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      data-transition="zoom"
+      data-transition-speed="fast">
+  
+<p><img src="https://img.bmpi.dev/6b140fbf-3969-3c0b-da66-ed8c7d6cb0e7.png" alt=""></p>
+</section><section>
+<p><img src="https://img.bmpi.dev/08ec6121-52cf-5787-b341-cc8a609704eb.png" alt=""></p>
+</section><section>
+<h5 id="type-system">Type System</h5>
+<p><img src="https://img.bmpi.dev/6d89e5c3-9b7c-3527-8caa-c9158cb803dc.png" alt=""></p>
+</section><section>
+<h5 id="evolution-of-programming-languages">Evolution of Programming Languages</h5>
+<p><img src="https://img.bmpi.dev/f70c3464-fad4-39a2-2608-96972f5e836e.png" alt=""></p>
+</section><section>
+<h5 id="classify">Classify</h5>
+<p><img src="https://img.bmpi.dev/887e7de2-a6fa-66d8-8eab-809ff012738f.png" alt=""></p>
+</section><section>
+<h5 id="evaluate-programming-languages">Evaluate programming languages</h5>
+<p><img src="https://img.bmpi.dev/7addfc60-98ba-1dcd-562a-097381bea8ff.png" alt=""></p>
+</section><section>
+<p><img src="https://img.bmpi.dev/d3361db6-0cd8-9239-a02e-27ca880be57f.png" alt=""></p>
+</section><section>
+
+
+<section data-shortcode-section>
+<img src="https://img.bmpi.dev/7083e9da-dd79-5a17-8c96-85bcfea0efd0.png" width="70%"/>
+
+</section>
+</section><section>
+<h5 id="whats-the-big-deal-with-elixir">What’s the big deal with Elixir?</h5>
+<ul>
+<li>Ruby-like focus on developer productivity</li>
+<li>Embedded database</li>
+<li>Compiles down to code to run on the BEAM Virtual Machine</li>
+<li>BEAM/OTP is what Erlang runs on</li>
+<li>Erlang/BEAM is the best existing language for concurrency, consistency and fault tolerance, hot code swapping</li>
+<li>Erlang does not focus on developer productivity</li>
+<li>Problem in Ruby is concurrency model</li>
+</ul>
+</section>
+
+<section data-noprocess data-shortcode-slide
+      class="side-by-side">
+  
+<h5 id="so-what-does-that-mean">So what does that mean?</h5>
+
+
+<section data-shortcode-section>
+<div class="img-side-by-side">
+  <div class="img-column">
+    <h6>Standard Web App</h6>
+    <img src="https://img.bmpi.dev/76e82bd2-2905-1f1d-9e84-9f41f6977c62.png" style="width:100%">
+  </div>
+  <div class="img-column" style="float: right">
+    <h6>OTP</h6>
+    <img src="https://img.bmpi.dev/69b6963f-8d49-4520-8410-f1bdbc3697de.png" style="width:100%">
+  </div>
+</div>
+
+</section>
+</section><section>
+<h5 id="whats-the-big-deal">What’s the big deal?</h5>
+<ul>
+<li>Facebook paid $22 billion for WhatsApp</li>
+<li>WhatsApp had $10 million in revenue</li>
+<li>What was the big deal?
+<ul>
+<li>Erlang/OTP</li>
+<li>2 million users / server</li>
+<li>No central relay point</li>
+<li>Scales horizontally</li>
+<li>Deploys w/o disconnect</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h5 id="other-languages">Other languages</h5>
+<ul>
+<li>Boot up</li>
+<li>Memory is shared
+<ul>
+<li>Where leaks come from</li>
+<li>Changing shared memory requires a mutex lock</li>
+</ul>
+</li>
+<li>Garbage collector periodically runs
+<ul>
+<li>Pause entire stack</li>
+</ul>
+</li>
+<li>Requests run in threads in the same process
+<ul>
+<li>Threads are cooperatively scheduled</li>
+<li>Deployment means shutting down current code, starting new code</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h5 id="erlangelixirotp">Erlang/Elixir/OTP</h5>
+<ul>
+<li>No memory is shared</li>
+<li>Data structures are immutable</li>
+<li>Each Erlang process (basically a light thread) has its own HEAP
+<ul>
+<li>Reclaimed on completion</li>
+</ul>
+</li>
+<li>Code can be hot deployed
+<ul>
+<li>New code runs next time it’s accessed (existing code keeps running)</li>
+</ul>
+</li>
+<li>Processes are prescheduled</li>
+</ul>
+</section><section>
+<h5 id="sound-familiar">Sound familiar?</h5>
+<ul>
+<li>Difference is size of the allocations
+<ul>
+<li>An Erlang process is 0.5 kb</li>
+<li>A Go goroutine is 2 kb (version 1.4)</li>
+<li>A Java thread is 1024 kb on 64 bit VM</li>
+<li>PHP request varies by how much is loaded</li>
+<li>Laravel averages 7-12mb / request</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<p><img src="https://img.bmpi.dev/c74980b8-0a2d-9ad6-dfdb-7db7c055a6f9.png" alt=""></p>
+<p>Programming Elixir, Chapter 15
+Laptop w/ 4 cores and 4gb of RAM counting concurrently 1,000,000 processes =</p>
+<ul>
+<li>0.48 gb in Elixir</li>
+<li>1.91 gb in Golang (go routines)</li>
+<li>977 gb in Java (threads)</li>
+<li>6,836 gb in PHP (Laravel requests)</li>
+</ul>
+</section><section>
+<h5 id="immutable-data">Immutable Data</h5>
+<ul>
+<li>There’s no passing pointers</li>
+<li>Add something to a list, get a new list</li>
+<li>Everything is “message passing”
+<ul>
+<li>Avoids mutex locks</li>
+<li>Enables per-process garbage collection</li>
+<li>Makes calling a function locally, in another process or on another machine transparent</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h5 id="3-databases-built-in">3 Databases Built In</h5>
+<ul>
+<li>ETS – Erlang Term Storage
+<ul>
+<li>In memory table storage for a node</li>
+</ul>
+</li>
+<li>DETS – Disk-based Erlang Term Storage
+<ul>
+<li>Disk table storage for a node</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h5 id="3-databases-built-in-1">3 Databases Built In</h5>
+<ul>
+<li>Mnesia - #awesome
+<ul>
+<li>A relational/object hybrid data model that is suitable for telecommunications applications.</li>
+<li>A DBMS query language, Query List Comprehension (QLC) as an add-on library.</li>
+<li>Persistence. Tables can be coherently kept on disc and in the main memory.</li>
+<li>Replication. Tables can be replicated at several nodes.</li>
+<li>Atomic transactions. A series of table manipulation operations can be grouped into a single atomic transaction.</li>
+<li>Location transparency. Programs can be written without knowledge of the actual data location.</li>
+<li>Extremely fast real-time data searches.</li>
+<li>Schema manipulation routines. The DBMS can be reconfigured at runtime without stopping the system.</li>
+</ul>
+</li>
+</ul>
+</section><section>
+<h5 id="loops">Loops?</h5>
+<p>How do you have a for loop with an immutable increment?</p>
+
+
+<span class='fragment '
+  >
+  Recursion. Lots of recursion.
+</span>
+</section><section>
+<blockquote>
+<p>“If Java is the right one to run anywhere, then Erlang is the right one to run forever.”</p>
+<p>- Joe Armstrong</p>
+</blockquote>
+</section><section>
+<p><img src="https://img.bmpi.dev/da934577-7910-0179-fe59-edbc27ccdabe.png" alt=""></p>
+</section><section>
+<p><img src="https://img.bmpi.dev/db092543-404b-56f9-7046-20b0ad238136.png" alt=""></p>
+</section><section>
+<p><img src="https://img.bmpi.dev/80f97e50-8220-3e56-3525-87d02f8c15a9.png" alt=""></p>
+</section><section>
+<p><img src="https://img.bmpi.dev/fbf43a0f-725d-3e7f-ad38-62626693e749.png" alt=""></p>
+</section><section>
+<h5 id="let-it-crash">Let it crash</h5>
+<p><img src="https://img.bmpi.dev/baf6e708-112b-3ce4-a5a8-64280e286ed9.png" alt=""></p>
+</section><section>
+<h5 id="let-it-crash-1">Let it crash</h5>
+<p><img src="https://img.bmpi.dev/c0253d3b-d7a9-ae9f-4381-81420a7210a8.png" alt=""></p>
+</section><section>
+<p><img src="https://img.bmpi.dev/81e003b2-6e2d-a63d-efc6-f189e82def18.png" alt=""></p>
+</section><section>
+<p><img src="https://img.bmpi.dev/7b7993c7-1f7e-1539-bfbe-86dede164c74.png" alt=""></p>
+</section><section>
+<p><img src="https://img.bmpi.dev/8241bfbd-cfa4-7834-fa1e-8b161ee4cff0.png" alt=""></p>
+</section><section>
+<p><img src="https://img.bmpi.dev/c2e7dd96-7a3b-c3cb-f708-a7475010b821.png" alt=""></p>
+</section><section>
+<h5 id="pattern-matching-functions">Pattern Matching Functions</h5>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#204a87;font-weight:bold">defmodule</span> <span style="color:#000">Factorial</span> <span style="color:#204a87;font-weight:bold">do</span>
+    <span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">of</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">),</span> <span style="color:#4e9a06">do</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span>
+    <span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">of</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">n</span><span style="color:#000;font-weight:bold">),</span> <span style="color:#4e9a06">do</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">n</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">of</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">n</span><span style="color:#ce5c00;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#204a87;font-weight:bold">end</span>
+<span style="color:#204a87;font-weight:bold">defmodule</span> <span style="color:#000">PrintStuff</span> <span style="color:#204a87;font-weight:bold">do</span>
+  <span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">print</span><span style="color:#000;font-weight:bold">({</span><span style="color:#4e9a06">:error</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">stuff</span><span style="color:#000;font-weight:bold">})</span> <span style="color:#204a87;font-weight:bold">do</span>
+    <span style="color:#000">IO</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">puts</span> <span style="color:#a40000">“</span><span style="color:#000">ERROR</span><span style="color:#ce5c00;font-weight:bold">!</span> <span style="color:#8f5902;font-style:italic">#{stuff}”</span>
+  <span style="color:#204a87;font-weight:bold">end</span>
+  <span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">print</span><span style="color:#000;font-weight:bold">({</span><span style="color:#4e9a06">:ok</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">stuff</span><span style="color:#000;font-weight:bold">}),</span> <span style="color:#4e9a06">do</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">IO</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">puts</span> <span style="color:#000">stuff</span>
+<span style="color:#204a87;font-weight:bold">end</span>
+<span style="color:#000">PrintStuff</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">print</span><span style="color:#000;font-weight:bold">({</span><span style="color:#4e9a06">:ok</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">stuff</span><span style="color:#000;font-weight:bold">})</span>
+</code></pre></div></section><section>
+<h5 id="parallel-map">Parallel Map</h5>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#204a87;font-weight:bold">defmodule</span> <span style="color:#000">Paraller</span> <span style="color:#204a87;font-weight:bold">do</span>
+  <span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">pmap</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">collection</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">fun</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">do</span>
+    <span style="color:#000">me</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">self</span>
+    <span style="color:#000">collection</span>
+    <span style="color:#ce5c00;font-weight:bold">|&gt;</span> <span style="color:#000">Enum</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">map</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">fn</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">elem</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span>
+        <span style="color:#000">spawn_link</span> <span style="color:#204a87;font-weight:bold">fn</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">send</span> <span style="color:#000">me</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">self</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">fun</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">elem</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">})</span> <span style="color:#204a87;font-weight:bold">end</span>
+       <span style="color:#204a87;font-weight:bold">end</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#ce5c00;font-weight:bold">|&gt;</span> <span style="color:#000">Enum</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">map</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">fn</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">pid</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span>
+         <span style="color:#204a87;font-weight:bold">receive</span> <span style="color:#204a87;font-weight:bold">do</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#ce5c00;font-weight:bold">^</span><span style="color:#000">pid</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">result</span> <span style="color:#000;font-weight:bold">}</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span> <span style="color:#000">result</span> <span style="color:#204a87;font-weight:bold">end</span>
+       <span style="color:#204a87;font-weight:bold">end</span><span style="color:#000;font-weight:bold">)</span>
+  <span style="color:#204a87;font-weight:bold">end</span>
+<span style="color:#204a87;font-weight:bold">end</span>
+</code></pre></div></section><section>
+<h5 id="otp">OTP</h5>
+<p><img src="https://img.bmpi.dev/95688637-6ce7-e2f0-2f5a-94a6854fd89c.png" alt=""></p>
+</section><section>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="nohighlight" data-noescape><span style="color:#204a87;font-weight:bold">defmodule</span> <span style="color:#000">Stack</span> <span style="color:#204a87;font-weight:bold">do</span>
+  <span style="color:#204a87;font-weight:bold">use</span> <span style="color:#000">GenServer</span>
+
+  <span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">init</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">stack</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">do</span>
+    <span style="color:#000;font-weight:bold">{</span><span style="color:#4e9a06">:ok</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">stack</span><span style="color:#000;font-weight:bold">}</span>
+  <span style="color:#204a87;font-weight:bold">end</span>
+
+  <span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">handle_call</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">:pop</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">_from</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#000">head</span> <span style="color:#ce5c00;font-weight:bold">|</span> <span style="color:#000">tail</span><span style="color:#000;font-weight:bold">])</span> <span style="color:#204a87;font-weight:bold">do</span>
+    <span style="color:#000;font-weight:bold">{</span><span style="color:#4e9a06">:reply</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">head</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">tail</span><span style="color:#000;font-weight:bold">}</span>
+  <span style="color:#204a87;font-weight:bold">end</span>
+
+  <span style="color:#204a87;font-weight:bold">def</span> <span style="color:#000">handle_cast</span><span style="color:#000;font-weight:bold">({</span><span style="color:#4e9a06">:push</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">item</span><span style="color:#000;font-weight:bold">},</span> <span style="color:#000">state</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#204a87;font-weight:bold">do</span>
+    <span style="color:#000;font-weight:bold">{</span><span style="color:#4e9a06">:noreply</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#000">item</span> <span style="color:#ce5c00;font-weight:bold">|</span> <span style="color:#000">state</span><span style="color:#000;font-weight:bold">]}</span>
+  <span style="color:#204a87;font-weight:bold">end</span>
+<span style="color:#204a87;font-weight:bold">end</span>
+
+<span style="color:#000;font-weight:bold">{</span><span style="color:#4e9a06">:ok</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">pid</span><span style="color:#000;font-weight:bold">}</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">GenServer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">start_link</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">Stack</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">:hello</span><span style="color:#000;font-weight:bold">])</span>
+
+<span style="color:#000">GenServer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">call</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pid</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">:pop</span><span style="color:#000;font-weight:bold">)</span>            <span style="color:#8f5902;font-style:italic">#=&gt; :hello</span>
+<span style="color:#000">GenServer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">cast</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pid</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#4e9a06">:push</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">:world</span><span style="color:#000;font-weight:bold">})</span> <span style="color:#8f5902;font-style:italic">#=&gt; :ok</span>
+<span style="color:#000">GenServer</span><span style="color:#ce5c00;font-weight:bold">.</span><span style="color:#000">call</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">pid</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">:pop</span><span style="color:#000;font-weight:bold">)</span>            <span style="color:#8f5902;font-style:italic">#=&gt; :world</span>
+</code></pre></div></section><section>
+<p><img src="https://img.bmpi.dev/9eb242db-c860-369f-6615-505a615c20f2.png" alt=""></p>
+</section><section>
+<h5 id="phoenix-framework">Phoenix Framework</h5>
+<p><img src="https://img.bmpi.dev/c5a8569f-42b1-63de-15a5-25d77f29a050.png" alt=""></p>
+</section><section>
+<blockquote>
+<p>Phoenix LiveView</p>
+<p>real-time user experiences with server-rendered HTML</p>
+<p>No JavaScript!</p>
+</blockquote>
+</section><section>
+<h5 id="macros---metaprogramming">Macros - Metaprogramming</h5>
+<p><img src="https://img.bmpi.dev/92f9dc01-8ca6-d73f-9580-b53ae82ce7ad.png" alt=""></p>
+</section><section>
+<h5 id="erlang-is-full-stack">Erlang is Full Stack</h5>
+<p><img src="https://img.bmpi.dev/04d7ad4d-ace5-ddc9-5211-0572c5b614e6.png" alt=""></p>
+</section><section>
+<p>Q&amp;A</p>
+
+
+<span class='fragment '
+  >
+  THANKS!
+</span>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=/reveal-hugo/object-assign.js></script>
+
+<a href="/reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">{"history":true,"templates":{"grey":{"background":"#424242","transition":"convex"}}}</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"reveal-hugo/themes/robot-lung.css","highlight_theme":"color-brewer","margin":0.2,"templates":{"hotpink":{"background":"#FF4081","class":"hotpink"}},"transition":"slide","transition_speed":"fast"}</script>
+
+<script src="/reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+
+  
+  
+  <script type="text/javascript" src="/reveal-js/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="/reveal-js/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/reveal-js/plugin/notes/notes.js"></script>
+
+
+
+    
+    
+    
+    
+     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154678195-3"></script>
+     <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-154678195-3');
+     </script>
+     
+     
+  </body>
+</html>
