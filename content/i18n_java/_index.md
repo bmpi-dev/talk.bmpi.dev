@@ -97,10 +97,12 @@ greetings = Hello
 farewell = Goodbye
 inquiry = How are you?
 ```
+
 2. Define the **Locale**
 ```
 aLocale = new Locale("en","US");
 ```
+
 3. Create a **ResourceBundle**
 ```
 messages = ResourceBundle.getBundle("MessagesBundle", currentLocale);
@@ -110,6 +112,7 @@ MessagesBundle_en_US.properties
 MessagesBundle_fr_FR.properties
 MessagesBundle_de_DE.properties
 ```
+
 4. Fetch the Text from the ResourceBundle
 ```
 String msg1 = messages.getString("greetings");
