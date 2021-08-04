@@ -18,7 +18,7 @@ name = "Dawei Ma"
 unsafe = true
 [markup.highlight]
 # we need a style that looks good in both light and dark background!
-style = "tango"
+codeFences = false
 
 [outputFormats.Reveal]
 baseName = "index"
@@ -27,6 +27,8 @@ isHTML = true
 
 [params.reveal_hugo]
 history = true
+custom_theme = "custom-theme.scss"
+custom_theme_compile = true
 
 # used in content/template-example
 [params.reveal_hugo.templates.grey]
