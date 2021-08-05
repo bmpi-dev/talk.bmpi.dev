@@ -1,6 +1,11 @@
 +++
 title = "i18n in Java"
 outputs = ["Reveal"]
+[reveal_hugo]
+theme = "moon"
+highlight_theme = "solarized-light"
+slide_number = true
+transition = "zoom"
 +++
 
 {{< slide id="i18n" background="#FFF" transition="zoom" transition-speed="fast" >}}
