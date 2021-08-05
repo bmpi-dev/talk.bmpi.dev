@@ -3,6 +3,8 @@ title = "i18n in Java"
 outputs = ["Reveal"]
 +++
 
+{{< slide id="i18n" background="#FFF" transition="zoom" transition-speed="fast" >}}
+
 ## i18n in Java
 
 ---
@@ -60,24 +62,20 @@ messages_en.properties
 hello=Hello(en)
 world=World
 ```
-
 messages_en_US.properties
 ```
 world=World(en_US)
 ```
-
 messages_es.properties
 ```
 hello=Hola
 world=Mundo
 ```
-
 execute java
 ```
 java Hello.java
 java Hello.java es
 ```
-
 {{% fragment %}}
 
 ```
@@ -236,3 +234,11 @@ It's <em>ResourceBundle</em>!
 - [awesome-i18n](https://github.com/mrhota/awesome-i18n)
 - [国际化与本地化](https://www.bmpi.dev/dev/i18n-l10n/)
 - [国际化分析与处理](http://www.gdzwk.com/#/blog/i18n)
+
+---
+
+{{% note %}}
+Don't forget to thank the audience.
+{{% /note %}}
+
+### Thanks!
