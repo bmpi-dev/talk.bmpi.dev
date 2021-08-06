@@ -237,6 +237,7 @@ It's <em>ResourceBundle</em>!
 - [Clojure uses standard Java ResourceBundle](https://github.com/feldi/clojure-i18n/blob/master/src/i18n/core.clj)
 - [awesome-i18n](https://github.com/jpomykala/awesome-i18n)
 - [awesome-i18n](https://github.com/mrhota/awesome-i18n)
+- [A Beginner’s Guide to Internationalization in Java](https://phrase.com/blog/posts/a-beginners-guide-to-java-internationalization/)
 - [国际化与本地化](https://www.bmpi.dev/dev/i18n-l10n/)
 - [国际化分析与处理](http://www.gdzwk.com/#/blog/i18n)
 
