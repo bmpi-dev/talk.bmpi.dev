@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2019/elixir/ --out ../../../dist/2019/elixir",
+    "build": "npm i && slidev build --base /2019/elixir/ --out ../../../dist/2019/elixir",
     "export": "slidev export --dark --output ./elixir.pdf"
   },
   "dependencies": {
