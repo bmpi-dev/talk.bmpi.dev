@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2019/elixir/ --out ../../../dist/2019/elixir",
+    "export": "slidev export --dark --output ./elixir.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.22.1",
+    "@slidev/theme-default": "^0.19.1",
+    "@slidev/theme-seriph": "^0.19.1"
+  },
+  "devDependencies": {
+    "@slidev/types": "^0.22.1",
+    "playwright-chromium": "^1.12.3"
+  }
+}

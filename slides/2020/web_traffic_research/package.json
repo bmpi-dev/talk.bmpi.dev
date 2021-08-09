@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2020/web-traffic-research/ --out ../../../dist/2020/web-traffic-research",
+    "export": "slidev export --dark --output ./web_traffic_research.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.22.1",
+    "@slidev/theme-default": "^0.19.1",
+    "@slidev/theme-seriph": "^0.19.1"
+  },
+  "devDependencies": {
+    "@slidev/types": "^0.22.1",
+    "playwright-chromium": "^1.12.3"
+  }
+}

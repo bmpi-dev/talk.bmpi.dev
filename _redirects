@@ -1,4 +1,0 @@
-# These rules will change if you change your site’s custom domains or HTTPS settings
-
-# Redirect default Netlify subdomain to primary domain
-https://affectionate-aryabhata-885493.netlify.com/* https://talk.bmpi.dev/:splat 301!

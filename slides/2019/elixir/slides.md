@@ -1,29 +1,43 @@
-+++
-title = "Elixir Intro"
-outputs = ["Reveal"]
-[reveal_hugo]
-custom_theme = "reveal-hugo/themes/robot-lung.css"
-margin = 0.2
-highlight_theme = "color-brewer"
-transition = "slide"
-transition_speed = "fast"
-[reveal_hugo.templates.hotpink]
-class = "hotpink"
-background = "#FF4081"
-+++
+---
+# try also 'default' to start simple
+theme: seriph
+# random image from a curated Unsplash collection by Anthony
+# like them? see https://unsplash.com/collections/94734566/slidev
+background: https://source.unsplash.com/collection/94734566/1920x1080
+# apply any windi css classes to the current slide
+class: 'text-center'
+# https://sli.dev/custom/highlighters.html
+highlighter: shiki
+# show line numbers in code blocks
+lineNumbers: false
+# some information about the slides, markdown enabled
+info: |
+  ## Slidev Starter Template
+  Presentation slides for developers.
+
+  Learn more at [Sli.dev](https://sli.dev)
+---
+
+# Elixir
+
+Presented by [@Dawei Ma](https://twitter.com/madawei2699)
+
+---
+layout: center
+class: text-center
+---
 
 ![](https://img.bmpi.dev/3c4893ed-d5ef-e8f3-d24b-4b7318b582ba.png)
 
-{{% fragment %}} 从 {{% /fragment %}}
-{{% fragment %}} 入 {{% /fragment %}}
-{{% fragment %}} 门 {{% /fragment %}}
-{{% fragment %}} 到 {{% /fragment %}}
-{{% fragment %}} 失 {{% /fragment %}}
-{{% fragment %}} 业 {{% /fragment %}}
+<v-click>
+
+从入门到失业
+
+</v-click>
 
 ---
 
-##### My programming language learning path
+## My programming language learning path
 
 * C/C++ 
 * Java/Scala (SpringBoot/Play2/Vert.x/RxJava)
@@ -38,7 +52,7 @@ background = "#FF4081"
 
 ---
 
-##### Rules for learning a language
+## Rules for learning a language
 
 * Must solve a problem
 * Problem not addressed by current stack
@@ -46,36 +60,43 @@ background = "#FF4081"
 * Should be the best solution
 
 ---
+layout: center
+class: text-center
+---
 
-{{< slide transition="zoom" transition-speed="fast" >}}
+<img src="https://img.bmpi.dev/6b140fbf-3969-3c0b-da66-ed8c7d6cb0e7.png" width="600"/>
 
-![](https://img.bmpi.dev/6b140fbf-3969-3c0b-da66-ed8c7d6cb0e7.png)
+---
+layout: center
+class: text-center
+---
+
+<img src="https://img.bmpi.dev/08ec6121-52cf-5787-b341-cc8a609704eb.png" width="600"/>
 
 ---
 
-![](https://img.bmpi.dev/08ec6121-52cf-5787-b341-cc8a609704eb.png)
-
----
-
-##### Type System
+## Type System
 
 ![](https://img.bmpi.dev/6d89e5c3-9b7c-3527-8caa-c9158cb803dc.png)
 
 ---
+layout: center
+class: text-center
+---
 
-##### Evolution of Programming Languages
+## Evolution of Programming Languages
 
-![](https://img.bmpi.dev/f70c3464-fad4-39a2-2608-96972f5e836e.png)
+<img src="https://img.bmpi.dev/f70c3464-fad4-39a2-2608-96972f5e836e.png" width="350"/>
 
 ---
 
-##### Classify
+## Classify
 
-![](https://img.bmpi.dev/887e7de2-a6fa-66d8-8eab-809ff012738f.png)
+<img src="https://img.bmpi.dev/887e7de2-a6fa-66d8-8eab-809ff012738f.png" width="600"/>
 
 ---
 
-##### Evaluate programming languages
+## Evaluate programming languages
 
 ![](https://img.bmpi.dev/7addfc60-98ba-1dcd-562a-097381bea8ff.png)
 
@@ -84,16 +105,15 @@ background = "#FF4081"
 ![](https://img.bmpi.dev/d3361db6-0cd8-9239-a02e-27ca880be57f.png)
 
 ---
+layout: center
+class: text-center
+---
 
-{{% section data-noprocess %}}
-
-<img src="https://img.bmpi.dev/7083e9da-dd79-5a17-8c96-85bcfea0efd0.png" width="70%"/>
-
-{{% /section %}}
+<img src="https://img.bmpi.dev/7083e9da-dd79-5a17-8c96-85bcfea0efd0.png" width="500"/>
 
 ---
 
-##### What’s the big deal with Elixir? 
+### What’s the big deal with Elixir? 
 
 * Ruby-like focus on developer productivity
 * Embedded database
@@ -104,29 +124,29 @@ background = "#FF4081"
 * Problem in Ruby is concurrency model
 
 ---
+layout: center
+class: text-center
+---
 
-{{< slide class="side-by-side" >}}
+> So what does that mean? 
 
-##### So what does that mean? 
+---
+layout: two-cols
+---
 
-{{% section data-noprocess %}}
+## Standard Web App
 
-<div class="img-side-by-side">
-  <div class="img-column">
-    <h6>Standard Web App</h6>
-    <img src="https://img.bmpi.dev/76e82bd2-2905-1f1d-9e84-9f41f6977c62.png" style="width:100%">
-  </div>
-  <div class="img-column" style="float: right">
-    <h6>OTP</h6>
-    <img src="https://img.bmpi.dev/69b6963f-8d49-4520-8410-f1bdbc3697de.png" style="width:100%">
-  </div>
-</div>
+<img src="https://img.bmpi.dev/76e82bd2-2905-1f1d-9e84-9f41f6977c62.png">
 
-{{% /section %}}
+::right::
+
+## OTP
+
+<img src="https://img.bmpi.dev/69b6963f-8d49-4520-8410-f1bdbc3697de.png">
 
 ---
 
-##### What’s the big deal?
+## What’s the big deal?
 
 * Facebook paid $22 billion for WhatsApp
 * WhatsApp had $10 million in revenue
@@ -139,7 +159,7 @@ background = "#FF4081"
 
 ---
 
-##### Other languages  
+## Other languages  
 
 * Boot up
 * Memory is shared
@@ -153,7 +173,7 @@ background = "#FF4081"
 
 ---
 
-##### Erlang/Elixir/OTP
+## Erlang/Elixir/OTP
 
 * No memory is shared
 * Data structures are immutable 
@@ -165,7 +185,7 @@ background = "#FF4081"
 
 ---
 
-##### Sound familiar? 
+## Sound familiar? 
 
 * Difference is size of the allocations 
   * An Erlang process is 0.5 kb
@@ -176,7 +196,7 @@ background = "#FF4081"
 
 ---
 
-![](https://img.bmpi.dev/c74980b8-0a2d-9ad6-dfdb-7db7c055a6f9.png)
+<img src="https://img.bmpi.dev/c74980b8-0a2d-9ad6-dfdb-7db7c055a6f9.png" width="500">
 
 Programming Elixir, Chapter 15 
 Laptop w/ 4 cores and 4gb of RAM counting concurrently 1,000,000 processes = 
@@ -187,7 +207,7 @@ Laptop w/ 4 cores and 4gb of RAM counting concurrently 1,000,000 processes =
 
 ---
 
-##### Immutable Data
+## Immutable Data
 
 * There’s no passing pointers 
 * Add something to a list, get a new list 
@@ -198,7 +218,7 @@ Laptop w/ 4 cores and 4gb of RAM counting concurrently 1,000,000 processes =
 
 ---
 
-##### 3 Databases Built In
+## 3 Databases Built In
 
 * ETS – Erlang Term Storage 
   * In memory table storage for a node
@@ -207,7 +227,7 @@ Laptop w/ 4 cores and 4gb of RAM counting concurrently 1,000,000 processes =
 
 ---
 
-##### 3 Databases Built In
+## 3 Databases Built In
 
 * Mnesia - #awesome
   * A relational/object hybrid data model that is suitable for telecommunications applications. 	
@@ -221,12 +241,19 @@ Laptop w/ 4 cores and 4gb of RAM counting concurrently 1,000,000 processes =
 
 ---
 
-##### Loops?
+## Loops?
 
 How do you have a for loop with an immutable increment? 
 
-{{% fragment %}} Recursion. Lots of recursion.  {{% /fragment %}}
+<v-click>
+ 
+Recursion. Lots of recursion.
 
+</v-click>
+
+---
+layout: center
+class: text-center
 ---
 
 > “If Java is the right one to run anywhere, then Erlang is the right one to run forever.”
@@ -234,52 +261,76 @@ How do you have a for loop with an immutable increment?
 > \- Joe Armstrong
 
 ---
+layout: center
+class: text-center
+---
 
-![](https://img.bmpi.dev/da934577-7910-0179-fe59-edbc27ccdabe.png)
+<img src="https://img.bmpi.dev/da934577-7910-0179-fe59-edbc27ccdabe.png" width="500">
+
+---
+layout: center
+class: text-center
+---
+
+<img src="https://img.bmpi.dev/db092543-404b-56f9-7046-20b0ad238136.png" width="500">
+
+---
+layout: center
+class: text-center
+---
+
+<img src="https://img.bmpi.dev/80f97e50-8220-3e56-3525-87d02f8c15a9.png" width="500">
+
+---
+layout: center
+class: text-center
+---
+
+<img src="https://img.bmpi.dev/fbf43a0f-725d-3e7f-ad38-62626693e749.png" width="500">
 
 ---
 
-![](https://img.bmpi.dev/db092543-404b-56f9-7046-20b0ad238136.png)
-
----
-
-![](https://img.bmpi.dev/80f97e50-8220-3e56-3525-87d02f8c15a9.png)
-
----
-
-![](https://img.bmpi.dev/fbf43a0f-725d-3e7f-ad38-62626693e749.png)
-
----
-
-##### Let it crash
+## Let it crash
 
 ![](https://img.bmpi.dev/baf6e708-112b-3ce4-a5a8-64280e286ed9.png)
 
 ---
 
-##### Let it crash
+## Let it crash
 
-![](https://img.bmpi.dev/c0253d3b-d7a9-ae9f-4381-81420a7210a8.png)
+<img src="https://img.bmpi.dev/c0253d3b-d7a9-ae9f-4381-81420a7210a8.png" width="500">
 
 ---
+layout: center
+class: text-center
+---
 
-![](https://img.bmpi.dev/81e003b2-6e2d-a63d-efc6-f189e82def18.png)
+<img src="https://img.bmpi.dev/81e003b2-6e2d-a63d-efc6-f189e82def18.png" width="300">
 
+---
+layout: center
+class: text-center
 ---
 
 ![](https://img.bmpi.dev/7b7993c7-1f7e-1539-bfbe-86dede164c74.png)
 
 ---
+layout: center
+class: text-center
+---
 
-![](https://img.bmpi.dev/8241bfbd-cfa4-7834-fa1e-8b161ee4cff0.png)
+<img src="https://img.bmpi.dev/8241bfbd-cfa4-7834-fa1e-8b161ee4cff0.png" width="300">
 
+---
+layout: center
+class: text-center
 ---
 
 ![](https://img.bmpi.dev/c2e7dd96-7a3b-c3cb-f708-a7475010b821.png)
 
 ---
 
-##### Pattern Matching Functions
+## Pattern Matching Functions
 
 ```elixir
 defmodule Factorial do
@@ -297,7 +348,7 @@ PrintStuff.print({:ok, stuff})
 
 ---
 
-##### Parallel Map
+## Parallel Map
 
 ```elixir
 defmodule Paraller do
@@ -316,7 +367,7 @@ end
 
 ---
 
-##### OTP
+## OTP
 
 ![](https://img.bmpi.dev/95688637-6ce7-e2f0-2f5a-94a6854fd89c.png)
 
@@ -347,15 +398,21 @@ GenServer.call(pid, :pop)            #=> :world
 ```
 
 ---
+layout: center
+class: text-center
+---
 
 ![](https://img.bmpi.dev/9eb242db-c860-369f-6615-505a615c20f2.png)
 
 ---
 
-##### Phoenix Framework
+## Phoenix Framework
 
 ![](https://img.bmpi.dev/c5a8569f-42b1-63de-15a5-25d77f29a050.png)
 
+---
+layout: center
+class: text-center
 ---
 
 > Phoenix LiveView
@@ -365,19 +422,28 @@ GenServer.call(pid, :pop)            #=> :world
 > No JavaScript!
 
 ---
+layout: center
+class: text-center
+---
 
-##### Macros - Metaprogramming
-
-![](https://img.bmpi.dev/92f9dc01-8ca6-d73f-9580-b53ae82ce7ad.png)
+<img src="https://img.bmpi.dev/92f9dc01-8ca6-d73f-9580-b53ae82ce7ad.png" width="600">
 
 ---
 
-##### Erlang is Full Stack
+## Erlang is Full Stack
 
 ![](https://img.bmpi.dev/04d7ad4d-ace5-ddc9-5211-0572c5b614e6.png)
 
 ---
+layout: center
+class: text-center
+---
 
-Q&A
+# Q&A
 
-{{% fragment %}} THANKS! {{% /fragment %}}
+---
+layout: center
+class: text-center
+---
+
+# THANKS!

@@ -1,20 +1,31 @@
-+++
-title = "i18n in Java"
-outputs = ["Reveal"]
-[reveal_hugo]
-theme = "moon"
-highlight_theme = "solarized-light"
-slide_number = true
-transition = "zoom"
-+++
+---
+# try also 'default' to start simple
+theme: seriph
+layout: cover
+# random image from a curated Unsplash collection by Anthony
+# like them? see https://unsplash.com/collections/94734566/slidev
+background: https://source.unsplash.com/collection/94734566/1920x1080
+# apply any windi css classes to the current slide
+class: 'text-center'
+# https://sli.dev/custom/highlighters.html
+highlighter: shiki
+# show line numbers in code blocks
+lineNumbers: false
+# some information about the slides, markdown enabled
+info: |
+  ## Slidev Starter Template
+  Presentation slides for developers.
 
-{{< slide id="i18n" background="#FFF" transition="zoom" transition-speed="fast" >}}
+  Learn more at [Sli.dev](https://sli.dev)
+---
 
-## i18n in Java
+# i18N in Java
+
+Presented by [@Dawei Ma](https://twitter.com/madawei2699)
 
 ---
 
-### G11N/i18N/L10N
+## G11N/i18N/L10N
 
 ![](https://img.bmpi.dev/53875fc9-00ac-e8e2-8d91-06399755dcba.png)
 
@@ -32,7 +43,7 @@ An internationalized program has the following characteristics:
 
 ---
 
-### Java i18n Demo
+## Java i18n Demo
 
 ```java
 import java.util.Locale;
@@ -81,18 +92,19 @@ execute java
 java Hello.java
 java Hello.java es
 ```
-{{% fragment %}}
+
+<v-click>
 
 ```
 Hello(en) World(en_US)
 Hola Mundo
 ```
 
-{{% /fragment %}}
+</v-click>
 
 ---
 
-### Java i18N workflow
+## Java i18N workflow
 
 1. Create the Properties Files
 ```
@@ -125,25 +137,23 @@ String msg1 = messages.getString("greetings");
 
 How does an internationalized program identify the appropriate language and region of its end users?
 
-{{% fragment %}}
+<v-click>
 
 It references a <ins>Locale</ins> object.
 
-{{% /fragment %}}
+</v-click>
 
 ---
 
-{{% section %}}
-
-### Locale in i18N
+## Locale in i18N
 
 > Locale is the user-specific location and cultural information managed by a computer. [(RFC6365)](https://datatracker.ietf.org/doc/html/rfc6365)
-
+>
 > A concept or identifier used by programmers to represent a particular collection of cultural, regional, or linguistic preferences.
 
 ---
 
-### Tags for Identifying Languages(BCP 47)
+## Tags for Identifying Languages(BCP 47)
 
 ![](https://img.bmpi.dev/d1feae2e-8820-2112-2354-60b8de71589c.png)
 
@@ -153,7 +163,7 @@ langtag = language["-" script]["-" region]*("-" variant)*("-" extension)["-" pri
 
 ---
 
-### i18N IETF Standard
+## i18N IETF Standard
 
 - [Terminology Used in Internationalization in the IETF](https://datatracker.ietf.org/doc/html/rfc6365)
 - [IETF BCP<sub>Best Current Practice</sub> 47<sup>Language Tag Registry Update (LTRU)</sup>](https://www.rfc-editor.org/info/bcp47)
@@ -161,7 +171,7 @@ langtag = language["-" script]["-" region]*("-" variant)*("-" extension)["-" pri
 
 ---
 
-### Locale in Java
+## Locale in Java
 
 [java.util.Locale](https://github1s.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/Locale.java)
 
@@ -177,21 +187,19 @@ langtag = language["-" script]["-" region]*("-" variant)*("-" extension)["-" pri
   - [ISO 3166](https://www.iso.org/iso-3166-country-codes.html): Country codes
   - [ISO 15924](https://unicode.org/iso15924/iso15924-codes.html): Script code
 
-{{% /section %}}
-
 ---
 
 How does Java get messages by locale identify?
 
-{{% fragment %}}
+<v-click>
 
 It's <em>ResourceBundle</em>!
 
-{{% /fragment %}}
+</v-click>
 
 ---
 
-### ResourceBundle in Java
+## ResourceBundle in Java
 
 [java.util.ResourceBundle](https://github1s.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/ResourceBundle.java)
 
@@ -199,7 +207,7 @@ It's <em>ResourceBundle</em>!
 
 ---
 
-### Others for i18N
+## Others for i18N
 
 - [Common Language Data Repository(CLDR)](http://cldr.unicode.org/)<sup>Incorporated into JDK 8</sup>
   - <ins>Locale-specific patterns for formatting and parsing</ins>: dates, times, timezones, numbers and currency values, measurement units,…
@@ -211,7 +219,7 @@ It's <em>ResourceBundle</em>!
 
 ---
 
-### Outside of Java
+## Outside of Java
 
 - [GUN gettext](https://www.gnu.org/software/gettext/)
   - C
@@ -231,7 +239,7 @@ It's <em>ResourceBundle</em>!
 
 ---
 
-### Further reading list
+## Further reading list
 
 - [Building a minimal i18n library](https://janmonschke.com/building-a-minimal-i18n-library)
 - [Clojure uses standard Java ResourceBundle](https://github.com/feldi/clojure-i18n/blob/master/src/i18n/core.clj)
@@ -242,9 +250,8 @@ It's <em>ResourceBundle</em>!
 - [国际化分析与处理](http://www.gdzwk.com/#/blog/i18n)
 
 ---
+layout: center
+class: text-center
+---
 
-{{% note %}}
-Don't forget to thank the audience.
-{{% /note %}}
-
-### Thanks!
+# Thanks!

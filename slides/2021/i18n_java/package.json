@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2021/i18n-java/ --out ../../../dist/2021/i18n-java",
+    "export": "slidev export --dark --output ./i18n_java.pdf"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.22.1",
+    "@slidev/theme-default": "^0.19.1",
+    "@slidev/theme-seriph": "^0.19.1"
+  },
+  "devDependencies": {
+    "@slidev/types": "^0.22.1",
+    "playwright-chromium": "^1.12.3"
+  }
+}
