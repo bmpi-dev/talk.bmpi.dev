@@ -155,7 +155,7 @@ It references a <ins>Locale</ins> object.
 
 ## Tags for Identifying Languages(BCP 47)
 
-![](https://img.bmpi.dev/d1feae2e-8820-2112-2354-60b8de71589c.png)
+<img src="https://img.bmpi.dev/d1feae2e-8820-2112-2354-60b8de71589c.png" width="700"/>
 
 ```
 langtag = language["-" script]["-" region]*("-" variant)*("-" extension)["-" privateuse]
