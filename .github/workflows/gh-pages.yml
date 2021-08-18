@@ -16,9 +16,11 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - uses: actions/setup-node@v2
-      - uses: FedericoCarboni/setup-ffmpeg@v1
         with:
           node-version: '14'
+
+      - uses: FedericoCarboni/setup-ffmpeg@v1
+
       - run: npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build && cp netlify.toml dist/
         env:
           NPM_FLAGS: "--prefix=/dev/null"
