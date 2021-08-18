@@ -1,0 +1,22 @@
+[build]
+  publish = "./"
+
+[[redirects]]
+  from = "/2021/i18n-java/*"
+  to = "/2021/i18n-java/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2020/web-traffic-research/*"
+  to = "/2020/web-traffic-research/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/2019/elixir/*"
+  to = "/2019/elixir/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/"
+  to = "https://www.bmpi.dev/talk"
+  status = 302
