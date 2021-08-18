@@ -219,6 +219,23 @@ It's <em>ResourceBundle</em>!
 
 ---
 
+## i18n Format
+
+<img src="https://img.bmpi.dev/69f59130-b39c-f9d4-0c26-0f06f529a881.png" width="500"/>
+
+
+---
+
+## i18n Format Reference
+
+1. https://docs.oracle.com/javase/tutorial/i18n/format/index.html
+2. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl
+3. http://rxaviers.github.io/javascript-globalization/
+4. https://lokalise.com/blog/comparing-libraries-translating-js-apps/
+5. https://github.com/unicode-org/cldr-json#package-organization
+
+---
+
 ## Outside of Java
 
 - [GUN gettext](https://www.gnu.org/software/gettext/)
