@@ -266,7 +266,7 @@ It's <em>ResourceBundle</em>!
 - [国际化与本地化](https://www.bmpi.dev/dev/i18n-l10n/)
 - [国际化分析与处理](http://www.gdzwk.com/#/blog/i18n)
 - [ECMAScript® 2021 Internationalization API Specification](https://402.ecma-international.org/)
-- [iLib](https://github.com/iLib-js/iLib/blob/development/docs/Architecture.md)
+- [iLib-js](https://github.com/iLib-js/iLib/blob/development/docs/Architecture.md)
 
 ---
 layout: center
