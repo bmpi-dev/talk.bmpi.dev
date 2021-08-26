@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "slidev",
     "build": "npm i && slidev build --base /2020/web-traffic-research/ --out ../../../dist/2020/web-traffic-research",
-    "export": "slidev export --dark --output ./web_traffic_research.pdf"
+    "export": "slidev export --dark --output ../../../dist/2020/web-traffic-research/web_traffic_research.pdf"
   },
   "dependencies": {
     "@slidev/cli": "^0.22.1",

@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "slidev",
     "build": "npm i && slidev build --base /2019/elixir/ --out ../../../dist/2019/elixir",
-    "export": "slidev export --dark --output ./elixir.pdf"
+    "export": "slidev export --dark --output ../../../dist/2019/elixir/elixir.pdf"
   },
   "dependencies": {
     "@slidev/cli": "^0.22.1",
