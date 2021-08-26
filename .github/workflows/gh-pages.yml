@@ -31,6 +31,8 @@ jobs:
           NPM_FLAGS: "--prefix=/dev/null"
           PLAYWRIGHT_BROWSERS_PATH: "0"
 
+      - run: npm run export
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'

@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "rimraf dist && pnpm -r run build && pnpm -r run export"
+    "build": "rimraf dist && pnpm -r run build && pnpm -r run export",
+    "export": "pnpm -r run export"
   },
   "devDependencies": {
     "pnpm": "^6.9.1",
