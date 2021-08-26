@@ -21,7 +21,7 @@ jobs:
 
       - uses: FedericoCarboni/setup-ffmpeg@v1
 
-      - run: npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build && cp netlify.toml dist/
+      - run: npm i && npm run build && cp netlify.toml dist/
         env:
           NPM_FLAGS: "--prefix=/dev/null"
           PLAYWRIGHT_BROWSERS_PATH: "0"
