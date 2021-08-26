@@ -21,6 +21,8 @@ jobs:
 
       - uses: FedericoCarboni/setup-ffmpeg@v1
 
+      - uses: microsoft/playwright-github-action@v1
+
       - run: npm i && npm run build && cp netlify.toml dist/
         env:
           NPM_FLAGS: "--prefix=/dev/null"
