@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm i @slidev/cli@0.22.1 -g
+      - run: npm i @slidev/cli@0.22.1 -g && npm i -D @playwright/test && npx playwright install chromium
 
       - uses: FedericoCarboni/setup-ffmpeg@v1
 
