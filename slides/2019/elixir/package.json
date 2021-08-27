@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "npm i && slidev build --base /2019/elixir/ --out ../../../dist/2019/elixir",
+    "build": "npm i && node node_modules/playwright/install.js && slidev build --base /2019/elixir/ --out ../../../dist/2019/elixir",
     "export": "slidev export --dark --output ../../../dist/2019/elixir/elixir.pdf"
   },
   "dependencies": {

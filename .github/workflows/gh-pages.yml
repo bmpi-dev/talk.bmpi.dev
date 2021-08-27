@@ -22,10 +22,6 @@ jobs:
 
       - uses: FedericoCarboni/setup-ffmpeg@v1
 
-      - uses: microsoft/playwright-github-action@v1
-
-      - uses: browser-actions/setup-chrome@latest
-
       - run: npm i -D @playwright/test && npx playwright install chromium
 
       - run: npm i && npm run build && cp netlify.toml dist/
