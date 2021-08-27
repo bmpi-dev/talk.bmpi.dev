@@ -26,7 +26,7 @@ jobs:
 
       - uses: browser-actions/setup-chrome@latest
 
-      - run: npx playwright install chromium
+      - run: npm i -D @playwright/test && npx playwright install chromium
 
       - run: npm i && npm run build && cp netlify.toml dist/
         env:
