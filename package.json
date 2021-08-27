@@ -4,8 +4,15 @@
     "build": "rimraf dist && pnpm -r run build",
     "export": "pnpm -r run export"
   },
+  "dependencies": {
+    "@slidev/cli": "^0.22.1",
+    "@slidev/theme-default": "^0.19.1",
+    "@slidev/theme-seriph": "^0.19.1"
+  },
   "devDependencies": {
     "pnpm": "^6.9.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "@slidev/types": "^0.22.1",
+    "playwright-chromium": "^1.12.3"
   }
 }
