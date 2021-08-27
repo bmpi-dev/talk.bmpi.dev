@@ -1,8 +1,5 @@
 {
   "private": true,
-  "workspaces": [
-    "i18n_java"
-  ],
   "scripts": {
     "dev": "slidev",
     "build": "slidev build --base /2021/i18n-java/ --out ../../../dist/2021/i18n-java",

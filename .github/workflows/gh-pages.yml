@@ -18,11 +18,9 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm i postcss -g && npm i @slidev/cli@0.22.1 -g
+      - run: npm i @slidev/cli@0.22.1 -g
 
       - uses: FedericoCarboni/setup-ffmpeg@v1
-
-      - run: npm i -D @playwright/test && npx playwright install chromium
 
       - run: npm i && npm run build && cp netlify.toml dist/
         env:

@@ -1,8 +1,5 @@
 {
   "private": true,
-  "workspaces": [
-    "elixir"
-  ],
   "scripts": {
     "dev": "slidev",
     "build": "slidev build --base /2019/elixir/ --out ../../../dist/2019/elixir",

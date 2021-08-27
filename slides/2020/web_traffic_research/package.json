@@ -1,8 +1,5 @@
 {
   "private": true,
-  "workspaces": [
-    "web_traffic_research"
-  ],
   "scripts": {
     "dev": "slidev",
     "build": "slidev build --base /2020/web-traffic-research/ --out ../../../dist/2020/web-traffic-research",
