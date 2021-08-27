@@ -26,12 +26,14 @@ jobs:
 
       - uses: browser-actions/setup-chrome@latest
 
+      - run: npx playwright install chromium
+
       - run: npm i && npm run build && cp netlify.toml dist/
         env:
           NPM_FLAGS: "--prefix=/dev/null"
           PLAYWRIGHT_BROWSERS_PATH: "0"
 
-      - run: npx playwright install chromium && npm run export
+      - run: npm run export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
