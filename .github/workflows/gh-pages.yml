@@ -7,8 +7,9 @@ on:
   pull_request:
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-20.04
+    allow-failure: true
     steps:
       - uses: actions/checkout@v2
         with:
