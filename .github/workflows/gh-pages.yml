@@ -9,7 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    allow-failure: true
     steps:
       - uses: actions/checkout@v2
         with:
@@ -27,6 +26,11 @@ jobs:
         env:
           NPM_FLAGS: "--prefix=/dev/null"
           PLAYWRIGHT_BROWSERS_PATH: "0"
+
+      - name: export pdf of slides
+        id: export-pdf
+        continue-on-error: true
+        run: npm run export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
