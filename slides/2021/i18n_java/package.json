@@ -3,6 +3,6 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build --base /2021/i18n-java/ --out ../../../dist/2021/i18n-java",
-    "export": "slidev export --dark --output ./i18n_java.pdf"
+    "export": "slidev export --dark --output i18n_java.pdf"
   }
 }
