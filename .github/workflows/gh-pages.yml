@@ -20,7 +20,17 @@ jobs:
           node-version: '14'
       - run: npm i @slidev/cli@0.22.1 -g && npm i
 
-      - run: make
+      - run: npm i -D playwright-chromium -g # used by export pdf
+
+      - uses: FedericoCarboni/setup-ffmpeg@v1 # used by export pdf
+
+      - name: build html
+        run: make
+
+      - name: export pdf of slides
+        id: export-pdf
+        continue-on-error: true
+        run: make export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

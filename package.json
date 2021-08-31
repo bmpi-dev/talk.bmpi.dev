@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "make",
-    "export": "pnpm -r run export"
+    "export": "make export"
   },
   "dependencies": {
     "@slidev/cli": "^0.22.1",
