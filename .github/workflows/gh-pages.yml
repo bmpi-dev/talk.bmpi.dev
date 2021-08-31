@@ -18,19 +18,12 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm i @slidev/cli@0.22.1 -g && npm i -D playwright-chromium -g
-
-      - uses: FedericoCarboni/setup-ffmpeg@v1
+      - run: npm i @slidev/cli@0.22.1 -g
 
       - run: npm i && npm run build && cp netlify.toml dist/
         env:
           NPM_FLAGS: "--prefix=/dev/null"
           PLAYWRIGHT_BROWSERS_PATH: "0"
-
-      - name: export pdf of slides
-        id: export-pdf
-        continue-on-error: true
-        run: npm run export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
