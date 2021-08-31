@@ -257,3 +257,4 @@ class: "text-center"
 [Blog](https://www.bmpi.dev) / [GitHub](https://github.com/bmpi-dev/)
 
 All architecture images are drawn using [Excalidraw](https://excalidraw.com/#json=5853292198363136,2vdiy0bNWd19AgI1qNDiHg)
+
