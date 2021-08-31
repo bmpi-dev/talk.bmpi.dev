@@ -256,4 +256,4 @@ class: "text-center"
 
 [Blog](https://www.bmpi.dev) / [GitHub](https://github.com/bmpi-dev/)
 
-[Excalidraw](https://excalidraw.com/#json=5853292198363136,2vdiy0bNWd19AgI1qNDiHg)
+All Arch Images drawed by [Excalidraw](https://excalidraw.com/#json=5853292198363136,2vdiy0bNWd19AgI1qNDiHg)
