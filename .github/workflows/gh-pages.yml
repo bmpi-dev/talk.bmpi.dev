@@ -36,6 +36,8 @@ jobs:
         continue-on-error: true
         run: make export
 
+      - run: cp .gitattributes dist/ # used by git-lfs
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
