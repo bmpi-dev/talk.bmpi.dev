@@ -85,7 +85,7 @@ image: 'https://unsplash.com/photos/UQ_0STgQpLY/download?force=true&w=1920'
 ## www.bmpi.dev
 ### Hugo
 
-![](https://img.bmpi.dev/6956fb62-3259-2e4c-21a5-9c5d0f8151db.png)
+<img src="https://img.bmpi.dev/6956fb62-3259-2e4c-21a5-9c5d0f8151db.png" width="600"/>
 
 ---
 layout: intro-image-right
@@ -122,7 +122,7 @@ image: 'https://unsplash.com/photos/PY3d9NScUP4/download?force=true&w=1920'
 ## api.bmpi.dev
 ### Hugo
 
-<img src="https://img.bmpi.dev/3d1e7222-a3f0-a20f-58b2-db0262243381.png" width="580"/>
+<img src="https://img.bmpi.dev/3d1e7222-a3f0-a20f-58b2-db0262243381.png" width="530"/>
 
 ---
 layout: intro-image-right
