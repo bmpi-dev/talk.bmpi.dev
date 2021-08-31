@@ -18,14 +18,9 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm i @slidev/cli@0.22.1 -g
+      - run: npm i
 
-      - run: npm i && npm run build && cp netlify.toml dist/
-        env:
-          NPM_FLAGS: "--prefix=/dev/null"
-          PLAYWRIGHT_BROWSERS_PATH: "0"
-
-      - run: slidev build slides/2021/i18n_java/slides.md --base /2021/i18n-java/ --out dist/2021/i18n-java/
+      - run: make
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

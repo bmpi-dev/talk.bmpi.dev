@@ -2,7 +2,6 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "touch index.html && slidev build --base /2019/elixir/ --out ../../../dist/2019/elixir",
     "export": "slidev export --dark --output elixir.pdf"
   }
 }

@@ -2,7 +2,6 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "touch index.html && slidev build --base /2021/blog-arch/ --out ../../../dist/2021/blog-arch",
     "export": "slidev export --dark --output blog_arch.pdf"
   }
 }
