@@ -2,6 +2,8 @@ name: github pages
 
 on:
   push:
+    paths:
+      - 'slides/**/slides.md' # actions triggered by change of any of slides.md
     branches:
       - master  # Set a branch to deploy
   pull_request:
@@ -14,6 +16,8 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - run: apt-get update && apt-get install git-lfs # install lfs
 
       - uses: actions/setup-node@v2
         with:
