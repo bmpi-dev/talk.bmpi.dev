@@ -2,6 +2,11 @@
   publish = "./"
 
 [[redirects]]
+  from = "/2021/blog-arch/*"
+  to = "/2021/blog-arch/index.html"
+  status = 200
+
+[[redirects]]
   from = "/2021/i18n-java/*"
   to = "/2021/i18n-java/index.html"
   status = 200
