@@ -1,7 +1,0 @@
-{
-  "private": true,
-  "scripts": {
-    "dev": "slidev",
-    "export": "slidev export --dark --output i18n_java.pdf"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "private": true,
-  "scripts": {
-    "dev": "slidev",
-    "export": "slidev export --dark --output web_traffic_research.pdf"
-  }
-}

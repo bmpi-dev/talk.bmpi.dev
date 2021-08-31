@@ -1,6 +1,0 @@
-# must include every slide path for fixing https://vitejs.dev/config/#server-fs-allow limit
-packages:
-  - "slides/2019/elixir"
-  - "slides/2020/web_traffic_research"
-  - "slides/2021/i18n_java"
-  - "slides/2021/blog_arch"
