@@ -25,6 +25,8 @@ jobs:
           NPM_FLAGS: "--prefix=/dev/null"
           PLAYWRIGHT_BROWSERS_PATH: "0"
 
+      - run: slidev build slides/2021/i18n_java/slides.md --base /2021/i18n-java/ --out dist/2021/i18n-java/
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
