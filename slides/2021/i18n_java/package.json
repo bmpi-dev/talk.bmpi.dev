@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2021/i18n-java/ --out ../../../dist/2021/i18n-java",
+    "build": "touch index.html && slidev build --base /2021/i18n-java/ --out ../../../dist/2021/i18n-java",
     "export": "slidev export --dark --output i18n_java.pdf"
   }
 }

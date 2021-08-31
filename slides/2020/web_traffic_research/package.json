@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "slidev",
-    "build": "slidev build --base /2020/web-traffic-research/ --out ../../../dist/2020/web-traffic-research",
+    "build": "touch index.html && slidev build --base /2020/web-traffic-research/ --out ../../../dist/2020/web-traffic-research",
     "export": "slidev export --dark --output web_traffic_research.pdf"
   }
 }
