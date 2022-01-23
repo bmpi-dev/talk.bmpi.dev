@@ -2,6 +2,11 @@
   publish = "./"
 
 [[redirects]]
+  from = "/2022/content-marketing-to-personal-brand/*"
+  to = "/2022/content-marketing-to-personal-brand/index.html"
+  status = 200
+
+[[redirects]]
   from = "/2021/blog-arch/*"
   to = "/2021/blog-arch/index.html"
   status = 200
