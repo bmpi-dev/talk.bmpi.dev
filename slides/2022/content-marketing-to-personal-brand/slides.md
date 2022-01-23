@@ -1,11 +1,11 @@
 ---
 # try also 'default' to start simple
 theme: apple-basic
-layout: intro
+layout: intro-image
 remoteAssets: false
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
+image: https://images.unsplash.com/photo-1505682634904-d7c8d95cdc50
 # apply any windi css classes to the current slide
 # class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -20,14 +20,15 @@ info: |
   Learn more at [Sli.dev](https://sli.dev)
 ---
 
-# 从内容创作到个人品牌
-
-内容推广的一些实践介绍
-
-<div class="absolute bottom-10">
+<div class="absolute top-10">
   <span class="font-700">
     Presented by <a href="https://twitter.com/madawei2699">@Dawei Ma</a> 2022/01/27
   </span>
+</div>
+
+<div class="absolute bottom-10">
+  <h1>从内容创作到个人品牌</h1>
+  <p>内容推广的一些实践介绍</p>
 </div>
 
 ---
