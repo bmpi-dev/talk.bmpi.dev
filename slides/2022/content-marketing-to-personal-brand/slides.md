@@ -132,11 +132,82 @@ class: 'space-y-2 text-xs'
 > 更多独立博客的流量分析见这个 [Tweet](https://twitter.com/madawei2699/status/1466062765362012160?s=21)
 
 ---
-layout: center
-class: text-center
+layout: fact
 ---
 
-主动推广能直接影响`直接`、`引荐`与`社交`流量，间接影响`搜索`流量。
+# 获取流量的方式
+被动与主动
+
+---
+layout: fact
+---
+
+# 被动推广
+通过 SEO 的手段直接影响`搜索`流量
+
+---
+class: 'space-y-2 text-xs'
+---
+
+# [SEO 101](https://img.bmpi.dev/c2ed0179-5f7f-8fe8-2de0-df54a39686cc.png)
+
+## 关键字研究
+
+- 关键字搜索量
+- 关键字困难度
+
+## 内容创作
+
+- Meta 优化
+- 配图
+- 排版
+- 发布
+  - 浏览器通知
+  - 多渠道推广
+- 不定期更新
+
+---
+class: 'space-y-2 text-xs'
+---
+
+# [SEO 101](https://img.bmpi.dev/c2ed0179-5f7f-8fe8-2de0-df54a39686cc.png)
+
+## 站内优化
+
+- 内链
+- robots
+- sitemap
+- 加载速度
+- 移动优化
+
+## 外链建设
+
+- 论坛推广
+- 社交媒体
+- 客座贴子
+- 付费推广
+
+---
+class: 'space-y-2 text-xs'
+---
+
+# [SEO 101](https://img.bmpi.dev/c2ed0179-5f7f-8fe8-2de0-df54a39686cc.png)
+
+## 工具
+
+- 监控
+  - GA
+  - GSC
+- 自检工具
+  - Meta Seo Inspector
+  - Google Pagespeed Insights
+
+---
+layout: fact
+---
+
+# 主动推广
+直接影响`直接`、`引荐`与`社交`流量，间接影响`搜索`流量
 
 ---
 class: 'space-y-2 text-xs'
@@ -274,8 +345,9 @@ class: 'space-y-0 text-xs'
   - 博客网站最好设置`og:image`属性，这样在社交媒体分享时可以自动获取到配图，更能吸引人打开
   - 博客网站的文章图片技术上应进行懒加载设置、图片压缩及 CDN 加速等，尽可能提高加载速度
 - 使用专业的中英文排版库对博客文章排版，如 [赫蹏](https://github.com/sivan/heti)。好的排版能更体现专业性，能吸引用户分享及订阅。
-- 内链设计。尽可能找和你之前所写文章有关联的关键词，用这些关键词关联到网站的其他文章。当然一些专业的术语也可以加外链，方便读者参考。这些做法都可以提高内容的黏性。
+- 内链设计。网页相比纸面文章的优势是可以加链接，所以尽可能找和你之前所写文章有关联的关键词，用这些关键词关联到网站的其他文章。当然一些专业的术语也可以加外链，方便读者参考。丰富的内链可以提高内容的黏性。
 - 一般来说长文更容易获得收藏、分享等，长文也对 SEO 更友好一些，长文的内链设计更容易做，长文的关键词、长尾词也更多一些
+- 使用`Meta Seo Inspector`自检，确保文章内容对`SEO`友好
 
 ---
 class: 'space-y-2 text-xs'

@@ -1,0 +1,33 @@
+@startmindmap
+skinparam monochrome true
+* SEO 101
+** 关键字研究
+*** 关键字搜索量
+*** 关键字困难度
+** 内容创作
+*** Meta 优化
+*** 配图
+*** 排版
+*** 发布
+**** 浏览器通知
+**** 多渠道推广
+*** 不定期更新
+** 站内优化
+*** 内链
+*** robots
+*** sitemap
+*** 加载速度
+*** 移动优化
+** 外链建设
+*** 论坛推广
+*** 社交媒体
+*** 客座贴子
+*** 付费推广
+** 工具
+*** 监控
+**** GA
+**** GSC
+*** 自检工具
+**** Meta Seo Inspector
+**** Google Pagespeed Insights
+@endmindmap
