@@ -125,7 +125,7 @@ class: 'space-y-2 text-xs'
 
 ## 社交流量
 
-社交流量的占比一般不高，但对搜索排名来说是很积极的信号。而且社交流量很适合做内容推广，读者的互动性很高，甚至会在极短时间内产生大量的流量。如 [JOEL ON SOFTWARE](https://www.joelonsoftware.com/) 的社交流量占比达10%，其作者 [Joel](https://twitter.com/spolsky) 在 Twitter 上有 176K 的粉丝。
+社交流量的占比一般不高，但 [对搜索排名来说是很积极的信号](https://brodieclark.com/twitter-carousels-google-search/)。而且社交流量很适合做内容推广，读者的互动性很高，甚至会在极短时间内产生大量的流量。如 [JOEL ON SOFTWARE](https://www.joelonsoftware.com/) 的社交流量占比达10%，其作者 [Joel](https://twitter.com/spolsky) 在 Twitter 上有 176K 的粉丝。
 
 <br>
 
@@ -230,6 +230,18 @@ class: 'space-y-2 text-xs'
 <br>
 
 > 注册 Twitter 近 10 年，第一个一千关注花了 9 年时间，之后的四千关注花了几个月时间。
+
+---
+
+# 主动推广的渠道类型
+
+![](https://img.bmpi.dev/adf08902-88b9-b73b-de5b-c173fd10763a.png)
+
+---
+
+# 主动推广的渠道效果追踪
+
+<img src="https://img.bmpi.dev/f807f029-23d8-11d5-337b-91e617f99e7a.png" style="width:35%;margin:auto;">
 
 ---
 layout: center
@@ -366,6 +378,8 @@ class: 'space-y-2 text-xs'
 - 付费推广。某些渠道还可以尝试付费推广，毕竟写作、推广所耗费的时间也都是成本。
 - 客座文章。如果某些平台可以投稿的话，如果此平台的流量、网站权威度都比我们的博客高，那可以尝试在上面投稿，并在文中引入博客的一些文章。这也是获取外链的方式。
 - 社交渠道。社交媒体无论在推广效果还是推广速度都具备很多优势，从长期写作推广的收益看，很有必要打造自己的社交账号（如微博、Twitter）。虽然需要一定的运营成本，但这是获取影响力很重要的途径。写长文不易，但写短文成本很低。
+
+> 推荐阅读这篇 [推广博客的21种策略](https://backlinko.com/promote-your-blog)
 
 ---
 layout: center
