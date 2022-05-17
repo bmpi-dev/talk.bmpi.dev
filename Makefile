@@ -9,6 +9,7 @@ build:
 	&& slidev build slides/2021/i18n-java/slides.md --base /2021/i18n-java/ --out dist/2021/i18n-java/ \
 	&& slidev build slides/2021/blog-arch/slides.md --base /2021/blog-arch/ --out dist/2021/blog-arch/ \
 	&& slidev build slides/2022/content-marketing-to-personal-brand/slides.md --base /2022/content-marketing-to-personal-brand/ --out dist/2022/content-marketing-to-personal-brand/ \
+	&& slidev build slides/2022/how-to-implement-concurrency/slides.md --base /2022/how-to-implement-concurrency/ --out dist/2022/how-to-implement-concurrency/ \
 
 export:
 	# slidev export slides/2019/elixir/slides.md --dark --output dist/2019/elixir/elixir.pdf \
