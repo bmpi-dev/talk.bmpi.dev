@@ -2,6 +2,7 @@
 
 Slides for my talks
 
+- [编程语言是如何实现并发的](https://talk.bmpi.dev/2022/how-to-implement-concurrency/)
 - [从内容创作到个人品牌](https://talk.bmpi.dev/2022/content-marketing-to-personal-brand/)
 - [My Blog Architecture](https://talk.bmpi.dev/2021/blog-arch)
 - [i18N in Java](https://talk.bmpi.dev/2021/i18n-java)
