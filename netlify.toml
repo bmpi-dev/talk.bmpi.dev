@@ -2,6 +2,11 @@
   publish = "./"
 
 [[redirects]]
+  from = "/2022/how-to-implement-concurrency/*"
+  to = "/2022/how-to-implement-concurrency/index.html"
+  status = 200
+
+[[redirects]]
   from = "/2022/content-marketing-to-personal-brand/*"
   to = "/2022/content-marketing-to-personal-brand/index.html"
   status = 200
